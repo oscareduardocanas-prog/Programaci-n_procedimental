@@ -11,81 +11,66 @@
     <title>Inventario</title>
   </head>
   <body>
-    <nav class="navbar" role="navigation">
-      <div class="navar-brand"><h2 class="title is-1">Inventario</h2></div>
-      <div class="navbar-end">
-      <a class="navbar-item" href="../index.html" style="background-color: #00d1b2; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
-        Mi tierra querida
-      </a>
-      </div>
-    </nav>
-    <table class="table">
-      <thead>
-        <tr>
-          <th><abbr title="nom_producto">Nombre del producto</abbr></th>
-          <th><abbr title="cod_producto">Codigo del producto</abbr></th>
-          <th><abbr title="Categoria">Categoria</abbr></th>
-          <th><abbr title="prec_unitario">Precio Unitario</abbr></th>
-          <th><abbr title="Descripciòn">Descripciòn</abbr></th>
-          <th><abbr title="Presentaciòn">Presentaciòn</abbr></th>
-          <th><abbr title="Marca">Marca</abbr></th>
-          <th><abbr title="Precio">Precio</abbr></th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Coca-cola</th>
-          <td>1233344566</td>           
-          <td>Bebida</td>
-          <td>$3.000</td>
-          <td>Bebida gaseosa refrescante</td>
-          <td>Lata</td>
-          <td>Coca-cola</td>
-          <td>250 ml</td>          
-        </tr>
-        <tr>
-          <th>Galletas</th>
-          <td>1233344567</td>           
-          <td>Snack</td>
-          <td>$2.000</td>
-          <td>Galletas de chocolate crujientes</td>
-          <td>Paquete</td>
-          <td>Oreo</td>
-          <td>150 g</td>
-        </tr>
-            <tr>
-            <th>Pan</th>
-            <td>1233344568</td>           
-            <td>Panaderia</td>
-            <td>$1.500</td>
-            <td>Pan fresco y suave</td>
-            <td>Unidad</td>
-            <td>Panadería local</td>
-            <td>500 g</td>  
-        </tr>
-        <tr>
-            <th>Leche</th>
-            <td>1233344569</td>           
-            <td>Lácteos</td>
-            <td>$2.500</td>
-            <td>Leche fresca y nutritiva</td>
-            <td>Botella</td>
-            <td>Alpina</td>
-            <td>1 litro</td>
-        </tr>
-        <tr>
-            <th>Arroz</th>
-            <td>1233344570</td>           
-            <td>Granos</td>
-            <td>$1.200</td>
-            <td>Arroz blanco de alta calidad</td>
-            <td>Bolsa</td>
-            <td>Gallo</td>
-            <td>1 kg</td>
-        </tr>
-  
-      </tbody>
-    </table>
+  <section class="section">
+    <div class="container">
+      <h3 class="title is-3">Agregar producto</h3>
+      <form>
+        <div class="field">
+          <label class="label">Nombre del producto</label>
+          <div class="control">
+            <input class="input" type="text" name="nombre_producto" placeholder="Ingrese el nombre del producto" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Precio</label>
+          <div class="control">
+            <input class="input" type="number" name="precio" placeholder="Ingrese el precio" step="0.01" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Código</label>
+          <div class="control">
+            <input class="input" type="text" name="codigo" placeholder="Ingrese el código del producto" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Cantidad</label>
+          <div class="control">
+            <input class="input" type="number" name="cantidad" placeholder="Ingrese la cantidad" min="1" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Marca</label>
+          <div class="control">
+            <input class="input" type="text" name="marca" placeholder="Ingrese la marca" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Categoría</label>
+          <div class="control">
+            <input class="input" type="text" name="categoria" placeholder="Ingrese la categoría" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Unidad de medida</label>
+          <div class="control">
+            <input class="input" type="text" name="unidad_medida" placeholder="Ingrese la unidad de medida" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="button is-primary" type="submit">Guardar producto</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
   </body>
 </html>
