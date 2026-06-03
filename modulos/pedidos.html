@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
   <title>Pedidos</title>
 </head>
+
 <body>
   <nav class="navbar" role="navigation">
-    <div class="navbar-bran"><h2 class="title is-1">Pedidos</h2></div>
+    <div class="navbar-bran">
+      <h2 class="title is-1">Pedidos</h2>
+    </div>
     <div class="navbar-end">
-    <a class="navbar-item" href="../index.html" >
-      Mi tierra querida
-    </a>
+      <a class="navbar-item" href="../index.html">
+        Mi tierra querida
+      </a>
     </div>
-  </nav>   
-  <div class="container"> 
-    <div class="field"></div>
-      <label class="label">Dirección</label>
-      <div class="control">
-        <input id="direccion" class="input" type="text" placeholder="Ingrese la dirección de entrega">
-      </div>
-    </div>
-      
-    <div class="field">
-      <label class="label">Telefono</label>
-      <div class="control has-icons-left has-icons-right">
-        <input id="telefono" class="input is-success" type="number" placeholder="Numero de telefono">
-      </div>  
-    </div>
-      
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control has-icons-left has-icons-right">
-        <input id="email" class="input is-success" type="email" placeholder="Ingrese su email">
-      </div>  
-    </div>
+  </nav>
+  <div class="container">
 
-    <div class="field">
-      <label class="label">Pedido</label>
-      <div class="control has-icons-left has-icons-right">
-        <input id="pedido" class="input is-success" type="text" placeholder="Ingrese el numero del pedido">
-      </div>  
+  <div class="field">
+    <label class="label">Dirección</label>
+    <div class="control">
+      <input id="direccion" class="input" type="text"
+        placeholder="Ingrese la dirección de entrega">
     </div>
+  </div>
 
-    <div class="field">
-      <label class="label">Nombre</label>
-      <div class="control has-icons-left has-icons-right">
-      <input id="nombre" class="input is-success" type="text" placeholder="Ingrese el nombre del cliente">
-      </div>  
+  <div class="field">
+    <label class="label">Teléfono</label>
+    <div class="control">
+      <input id="telefono" class="input" type="number"
+        placeholder="Número de teléfono">
     </div>
+  </div>
 
-    <div class="field">
-      <label class="label">Referencias</label>
-      <div class="control has-icons-left has-icons-right">
-      <input id="referencias" class="input is-success" type="text" placeholder="Ingrese referencias para la entrega">
-      </div>  
+  <div class="field">
+    <label class="label">Email</label>
+    <div class="control">
+      <input id="email" class="input" type="email"
+        placeholder="Ingrese su email">
     </div>
+  </div>
 
+  <div class="field">
+    <label class="label">Pedido</label>
+    <div class="control">
+      <input id="pedido" class="input" type="text"
+        placeholder="Ingrese el número del pedido">
+    </div>
+  </div>
 
-       
-    <div class="field"></div>
-      <label class="label">Metodo de pago</label>
-      <div class="control">
-        <div class="select">
+  <div class="field">
+    <label class="label">Nombre</label>
+    <div class="control">
+      <input id="nombre" class="input" type="text"
+        placeholder="Ingrese el nombre del cliente">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Referencias</label>
+    <div class="control">
+      <input id="referencias" class="input" type="text"
+        placeholder="Ingrese referencias para la entrega">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Método de pago</label>
+    <div class="control">
+      <div class="select">
         <select id="metodo_pago">
-          <option value="contraentrega">Contaentrega</option>
+          <option value="contraentrega">Contraentrega</option>
           <option value="nequi">Nequi</option>
-          <option value="tarjeta">Targeta</option>
+          <option value="tarjeta">Tarjeta</option>
         </select>
-        </div>
-      </div>
-    </div>
-      
-
-    
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-link">Confirmar pedido</button>
-      </div>
-      <div class="control">
-        <button class="button is-link is-light">Cancelar</button>
       </div>
     </div>
   </div>
+
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-link">Confirmar pedido</button>
+    </div>
+    <div class="control">
+      <button class="button is-link is-light">Cancelar</button>
+    </div>
+  </div>
+
+</div>
   <script src="js/pedidos.js"></script>
 </body>
+
 </html>
